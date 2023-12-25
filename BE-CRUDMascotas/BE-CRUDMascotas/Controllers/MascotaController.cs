@@ -19,6 +19,7 @@ namespace BE_CRUDMascotas.Controllers
         {
             try
             {
+                
                 var lisMascotas= await _context.Mascotas.ToListAsync();
                 return Ok(lisMascotas);
             }catch (Exception ex) { 
